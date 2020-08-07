@@ -5,7 +5,7 @@ import Footer from "../components/footer"
 export default function About(props) {
     function isIndex(index) {
         if (!index) {
-            return <Footer />
+            return <div><Navigation/><Footer /></div>
         }
     }
     return (
@@ -14,7 +14,6 @@ export default function About(props) {
                 <h1>Ingeniero de Sistemas e Informática</h1>
                 <h2>Freyman Lahionnell Balaguera Rubio</h2>
             </header>
-            <Navigation/>
             {isIndex(props.isIndex)}
         </div>
     )
