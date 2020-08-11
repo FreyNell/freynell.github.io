@@ -16,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
       flex: '1 0 auto',
     },
     cover: {
-      width: 151,
+      minWidth:100,
+      minHeight:100,
+      width: 100,
+      height: 100,
       borderRadius: "50%"
     },
 }));

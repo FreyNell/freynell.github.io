@@ -25,9 +25,9 @@ const useStyles = makeStyles((theme) => ({
 function Works() {
     const classes = useStyles();
     let worked = [
-        { title: "ENVGLOBEL", content: "Presentado en GlobHack 2020, consiste de un Dashboard que provee información de la contaminación producida por los vehículos en las calles de una ciudad, con el fin de ser mas precisos con las medidas gubernamentales tales como el pico y placa.", link: "", img:Red },
-        { title: "CO-LEG 3D", content: "CO-LEG 3D es una aplicación construída con el Stack MERN que busca permitir al cliente personalizar un diseño 3D Online de la protesis que desea adquirir con la empresa CO-LEG.", link: "", img:Blue },
-        {title:"PERSONAL PAGE",content:"This page",link:"", img:Yellow}
+        {title:"TREEBUILDER",content:"Creador de arbol de talentos para hojas de vida o páginas personales.",link:"https://github.com/FreyNell/treebuilder", img:Yellow},
+        { title: "ENVGLOBEL", content: "Presentado en GlobHack 2020, consiste de un Dashboard que provee información de la contaminación producida por los vehículos en las calles de una ciudad, con el fin de ser mas precisos con las medidas gubernamentales tales como el pico y placa.", link: "", img:Blue},
+        { title: "CO-LEG 3D", content: "CO-LEG 3D es una aplicación construída con el Stack MERN que busca permitir al cliente personalizar un diseño 3D Online de la protesis que desea adquirir con la empresa CO-LEG.", link: "", img:Red }
     ];
 
     let res = worked.map((work,i) =>
@@ -48,9 +48,7 @@ function Works() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    <Link href={work.link}>Codigo Fuente</Link>
-                </Button>
+                <Link href={work.link} color="warning" variant="button">Codigo Fuente</Link>
             </CardActions>
         </Card>
         );
