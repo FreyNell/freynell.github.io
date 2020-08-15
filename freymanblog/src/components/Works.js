@@ -48,7 +48,7 @@ function Works() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Link href={work.link} color="warning" variant="button">Codigo Fuente</Link>
+                <Link href={work.link} color="warning" variant="button">Código Fuente</Link>
             </CardActions>
         </Card>
         );
