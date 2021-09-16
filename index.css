@@ -48,6 +48,11 @@
         margin-right: 10px;
         padding-right: 10px;
     }
+
+    img {
+        margin-bottom: 20px;
+    }
+
     article {
         color: white;
     }
@@ -59,11 +64,15 @@
     
     h1,h2,h3,h4,h5,h6 {
         color: #00FF85;
+        margin-bottom: 20px;
     }
 
     table {
         color: white;
         min-width: 500px;
+    }
+    tr{
+        margin-bottom: 20px;
     }
     
     ul {
