@@ -22,7 +22,7 @@
         background-image: url(./chameleon_background.png);
         background-repeat: no-repeat;
         background-position: center;
-        opacity: 0.3;
+        opacity: 0.1;
         top: 0;
         left: 0;
         bottom: 0;
@@ -55,6 +55,7 @@
 
     article {
         color: white;
+        margin-bottom: 20px;
     }
     header {
         display: flex;
@@ -70,11 +71,10 @@
     table {
         color: white;
         min-width: 500px;
-    }
-    tr{
+        border-spacing: 0px;
         margin-bottom: 20px;
+        border-spacing: 20px;
     }
-    
     ul {
         list-style: none;
         color: white;
@@ -96,13 +96,6 @@
         display: inline-block; /* Needed to add space between the bullet and the text */
         width: 1.3em; /* Also needed for space (tweak if needed) */   
     }
-    
-    #table-img-zone {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
 
     #myName{
         text-align:center;
@@ -118,4 +111,18 @@
         width: 100%;
         justify-content: center; 
     }
+
+    #key-engagements-table{
+        border-spacing: 0px;
+    }
+    #key-engagements-table>tbody>tr>th{
+        border: 1px dashed white;
+        border-spacing: 0px;
+    }
+    #key-engagements-table>tbody>tr>td{
+        border: 1px dashed white;
+        border-spacing: 0px;
+        padding: 10px;
+    }
+
 }
